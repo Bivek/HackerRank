@@ -121,7 +121,7 @@ func main() {
 	scanner.Scan()
 	b, err := strconv.Atoi(scanner.Text())
 	if err != nil || b < 1 {
-		fmt.Printf("Budget input error. Buget should be an intger and should be greater than 0")
+		fmt.Printf("Budget input error. Budget should be an intger and should be greater than 0")
 		return
 	}
 	n := getMoneySpent(keyboards, drives, b)
